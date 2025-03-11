@@ -43,7 +43,7 @@ const ExpenseDashboard: React.FC = () => {
         </div>
       </div>
       
-      <div className="bg-gradient-to-r from-gray-50 to-white p-6 rounded-xl shadow-sm border border-gray-100">
+      <div className="bg-gradient-to-r from-indigo-50 to-purple-50 p-6 rounded-xl shadow-sm border border-indigo-100">
         <ExpensesList expenses={expenses} onDeleteExpense={handleDeleteExpense} />
       </div>
     </div>
