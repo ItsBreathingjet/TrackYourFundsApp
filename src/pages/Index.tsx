@@ -17,8 +17,13 @@ const Index = () => {
       
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-3xl font-bold mb-2 text-indigo-800">Expense Dashboard</h1>
-          <p className="text-purple-600 mb-8">Track, analyze and manage your expenses in one place</p>
+          <div className="mb-8">
+            <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-transparent bg-clip-text inline-block">
+              Expense Dashboard
+            </h1>
+            <div className="w-32 h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full"></div>
+            <p className="text-purple-600 mt-3">Track, analyze and manage your expenses in one place</p>
+          </div>
           <ExpenseDashboard />
         </div>
       </main>
