@@ -3,13 +3,28 @@ import React, { useMemo } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Expense } from '@/lib/types';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts';
+import { DEFAULT_CATEGORIES } from '@/lib/types';
 
 interface ExpenseChartProps {
   expenses: Expense[];
 }
 
-// Generate a color palette for categories
-const COLORS = [
+// Create a color map to maintain consistent colors for each category
+const CATEGORY_COLORS: Record<string, string> = {
+  "Food & Dining": '#3D9DCB',
+  "Transportation": '#4DB6AC',
+  "Housing": '#FFB74D',
+  "Entertainment": '#F06292',
+  "Shopping": '#9575CD',
+  "Healthcare": '#7986CB',
+  "Utilities": '#64B5F6',
+  "Travel": '#4FC3F7',
+  "Education": '#4DD0E1',
+  "Other": '#81C784'
+};
+
+// Fallback colors for any categories not in the map
+const FALLBACK_COLORS = [
   '#3D9DCB', '#4DB6AC', '#FFB74D', '#F06292', '#9575CD', 
   '#7986CB', '#64B5F6', '#4FC3F7', '#4DD0E1', '#81C784'
 ];
@@ -26,11 +41,17 @@ const ExpenseChart: React.FC<ExpenseChartProps> = ({ expenses }) => {
       }
     });
     
-    return Object.entries(categoryTotals).map(([name, value], index) => ({
-      name,
-      value,
-      color: COLORS[index % COLORS.length]
-    }));
+    return Object.entries(categoryTotals).map(([name, value]) => {
+      // Assign color from the map if available, or use a fallback
+      const color = CATEGORY_COLORS[name] || 
+        FALLBACK_COLORS[Object.keys(categoryTotals).indexOf(name) % FALLBACK_COLORS.length];
+      
+      return {
+        name,
+        value,
+        color
+      };
+    });
   }, [expenses]);
 
   const totalSpent = useMemo(() => {
