@@ -31,19 +31,21 @@ const ExpenseDashboard: React.FC = () => {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       <ExpenseStats expenses={expenses} />
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-1">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-3">
+        <div className="md:col-span-1">
           <ExpenseForm onAddExpense={handleAddExpense} />
         </div>
-        <div className="lg:col-span-2">
+        <div className="md:col-span-2">
           <ExpenseChart expenses={expenses} />
         </div>
       </div>
       
-      <ExpensesList expenses={expenses} onDeleteExpense={handleDeleteExpense} />
+      <div className="bg-gradient-to-r from-gray-50 to-white p-6 rounded-xl shadow-sm border border-gray-100">
+        <ExpensesList expenses={expenses} onDeleteExpense={handleDeleteExpense} />
+      </div>
     </div>
   );
 };
