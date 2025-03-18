@@ -14,7 +14,7 @@ const Logo: React.FC<LogoProps> = ({ className }) => {
         <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-lg">$</div>
       </div>
       <div className="flex flex-col items-start">
-        <span className="font-bold text-xl text-indigo-900">ExpenseTrack</span>
+        <span className="font-bold text-xl text-indigo-900">TrackYourFunds</span>
         <span className="text-xs text-purple-600 -mt-1">Manage your finances</span>
       </div>
     </div>

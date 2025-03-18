@@ -30,7 +30,7 @@ const Index = () => {
       
       <footer className="border-t mt-12 py-6 bg-white border-indigo-100">
         <div className="container mx-auto px-4 text-center text-sm text-purple-500">
-          © {new Date().getFullYear()} ExpenseTrack. All rights reserved.
+          © {new Date().getFullYear()} TrackYourFunds. All rights reserved.
         </div>
       </footer>
     </div>
