@@ -1,70 +1,92 @@
 
-# Welcome to your Lovable project
+# TrackYourFunds
 
-## Project info
+A sleek and intuitive expense tracking application that helps you manage your personal finances with ease.
 
-**URL**: https://lovable.dev/projects/339c1a1e-1c29-455d-979c-b07d6756ca6d
+![TrackYourFunds](public/og-image.png)
 
-## How can I edit this code?
+## Overview
 
-There are several ways of editing your application.
+TrackYourFunds is a modern web application designed to help users track, categorize, and visualize their expenses. With a clean and responsive interface, it provides an easy way to monitor spending habits and make informed financial decisions.
 
-**Use Lovable**
+## Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/339c1a1e-1c29-455d-979c-b07d6756ca6d) and start prompting.
+- **Expense Tracking**: Quickly add expenses with amounts, descriptions, and categories
+- **Visual Analytics**: Interactive pie charts that break down spending by category
+- **Expense Management**: View, sort, and delete your recorded expenses
+- **Financial Statistics**: Get insights into your spending habits with key metrics like total spend, average expense, and top spending categories
+- **Persistent Storage**: All data is saved locally in your browser for privacy and convenience
 
-Changes made via Lovable will be committed automatically to this repo.
+## Technology Stack
 
-**Use your preferred IDE**
+- **React**: For building a responsive and interactive UI
+- **TypeScript**: For type-safe code that's easier to maintain
+- **Tailwind CSS**: For modern, utility-first styling
+- **shadcn/ui**: For consistent, accessible UI components
+- **Recharts**: For data visualization
+- **date-fns**: For date formatting and calculations
+- **Local Storage API**: For client-side data persistence
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
 
-Follow these steps:
+- Node.js (v14 or later recommended)
+- npm or yarn package manager
 
+### Installation
+
+1. Clone the repository
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+git clone <repository-url>
+cd TrackYourFunds
 ```
 
-**Edit a file directly in GitHub**
+2. Install dependencies
+```sh
+npm install
+# or
+yarn install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. Start the development server
+```sh
+npm run dev
+# or
+yarn dev
+```
 
-**Use GitHub Codespaces**
+4. Open your browser and navigate to `http://localhost:8080`
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Usage
 
-## What technologies are used for this project?
+1. **Adding an Expense**:
+   - Enter the amount
+   - Provide a short description
+   - Select a category
+   - Click "Add Expense"
 
-This project is built with .
+2. **Viewing Expenses**:
+   - Scroll through your recent expenses in the list
+   - See a breakdown of expenses by category in the pie chart
+   - Check your spending statistics at the top
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+3. **Deleting an Expense**:
+   - Click the trash icon next to any expense to remove it
 
-## How can I deploy this project?
+## Future Enhancements
 
-Simply open [Lovable](https://lovable.dev/projects/339c1a1e-1c29-455d-979c-b07d6756ca6d) and click on Share -> Publish.
+- Export/import functionality for expense data
+- Monthly/yearly expense reports
+- Budget setting and tracking
+- Multiple currency support
+- User accounts and cloud synchronization
 
-## I want to use a custom domain - is that possible?
+## License
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+This project is available under the MIT License.
+
+## Acknowledgments
+
+- Icons provided by [Lucide Icons](https://lucide.dev/)
+- Color palettes inspired by [Tailwind CSS](https://tailwindcss.com/)
