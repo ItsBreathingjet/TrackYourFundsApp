@@ -3,8 +3,6 @@
 
 A sleek and intuitive expense tracking application that helps you manage your personal finances with ease.
 
-![TrackYourFunds](public/og-image.png)
-
 ## Overview
 
 TrackYourFunds is a modern web application designed to help users track, categorize, and visualize their expenses. With a clean and responsive interface, it provides an easy way to monitor spending habits and make informed financial decisions.
@@ -74,19 +72,3 @@ yarn dev
 3. **Deleting an Expense**:
    - Click the trash icon next to any expense to remove it
 
-## Future Enhancements
-
-- Export/import functionality for expense data
-- Monthly/yearly expense reports
-- Budget setting and tracking
-- Multiple currency support
-- User accounts and cloud synchronization
-
-## License
-
-This project is available under the MIT License.
-
-## Acknowledgments
-
-- Icons provided by [Lucide Icons](https://lucide.dev/)
-- Color palettes inspired by [Tailwind CSS](https://tailwindcss.com/)
